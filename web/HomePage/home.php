@@ -10,7 +10,7 @@
     </header>   
         <!--Display something-->
         <?php 
-        echo "<h1>Thanks for doing something</h1>";
+        echo "<p>Thanks for doing something</p>";
         echo date('h:i:s a l F jS y e');
         ?>
         
