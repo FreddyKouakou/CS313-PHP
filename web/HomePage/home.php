@@ -12,7 +12,7 @@
         <?php 
         echo "Submit";
         echo "<h1>Thanks for doing something</h1>";
-        echo date('h:i:s a l F jS y e');
+        echo date('h:i:s a l F jS y');
         ?>
         
     </body>
