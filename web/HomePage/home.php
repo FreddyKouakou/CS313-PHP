@@ -5,12 +5,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Personal Home Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style/medium.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style/large.css" />
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="scipt/main.js"></script>
 </head>
 
 <body>
