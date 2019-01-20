@@ -11,7 +11,6 @@
         <!--Display something-->
         <?php 
         echo "<h1>Thanks for doing something</h1>";
-        date_default_timezone_set('UTC');
         echo date('h:i:s a l F jS y e');
         ?>
         
