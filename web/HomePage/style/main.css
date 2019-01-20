@@ -1,0 +1,48 @@
+body{
+    background-color: aliceblue;
+}
+/*----------------- HEADER NAV -----------------*/
+nav {border-top: 4px solid red; background-color:rgb(240, 240, 240); width: 100%;}
+nav ul {margin: 0; padding: 0;}
+nav li {list-style-type: none;}
+nav li.active {border-bottom: 4px solid orangered;}
+
+nav a {
+    display: block;
+    padding: .8rem 0; /* 44 min height */
+    background:rgb(240, 240, 240);
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+nav a:hover {border-bottom: 4px solid red;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
