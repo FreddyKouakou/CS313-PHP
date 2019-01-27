@@ -27,8 +27,6 @@ $priceArray = array('Orange' => 1, 'Mango'=>2, 'Banana'=>3, 'Tangerine'=>2, 'Pin
     </table>
 <br>
 <br>
-<ul>
-    <li><a href="browse.html">Return to Shopping</a></li>
-</ul>
+    <a href="browse.html" target="_blank">Return to Shopping</a>
 </body>
 </html>
