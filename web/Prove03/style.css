@@ -35,3 +35,14 @@ form input.submit{
     margin: 1 2 2rem .1%;
     margin-top: 3em;
 }
+input{
+    display: block;
+    padding: .75rem 0;
+
+}
+form label.one input:required{
+    border-left: red solid 6px;
+}
+form label.one input:required:valid{
+    border-left:green solid 6px;
+}

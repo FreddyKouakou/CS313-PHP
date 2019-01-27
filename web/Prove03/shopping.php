@@ -1,5 +1,5 @@
 <?php session_start(); //Session gives access to the session array($_SESSION)
-$priceArray = array('Orange' => 1, 'Mango'=>2, 'Banana'=>3, 'Tangerine'=>2, 'Pineapple'=>5);
+$priceArray = array('Orange'=>1, 'Mango'=>2, 'Banana'=>3, 'Tangerine'=>2, 'Pineapple'=>5);
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +27,6 @@ $priceArray = array('Orange' => 1, 'Mango'=>2, 'Banana'=>3, 'Tangerine'=>2, 'Pin
     </table>
 <br>
 <br>
-    <a href="browse.html" target="_blank">Return to Shopping</a>
+    <a href="browse.html">Return to Shopping</a>
 </body>
 </html>

@@ -1,5 +1,13 @@
 <?php session_start(); //Session gives access to the session array($_SESSION)
+
 $priceArray = array('Orange' => 1, 'Mango'=>2, 'Banana'=>3, 'Tangerine'=>2, 'Pineapple'=>5);
+?>
+<?php
+$userAddress = htmlspecialchars($_POST["useraddress"]);
+$userCity = htmlspecialchars($_POST["usercity"]);
+$userStreet = htmlspecialchars($_POST["userstreet"]);
+$userZip = htmlspecialchars($_POST["userzip"]);
+
 ?>
 
 <!DOCTYPE html>
@@ -27,13 +35,15 @@ $priceArray = array('Orange' => 1, 'Mango'=>2, 'Banana'=>3, 'Tangerine'=>2, 'Pin
     </table>
 <br>
 <br>
-<ul>
-    <li><a href="browse.html">Return to Shopping</a></li>
-</ul>
+<a href="browse.html">Return to Shopping</a></li>
 <?php 
-$userAddress = htmlspecialchars($_POST["userAddress"]);
-echo $userAddress; 
-
+echo $userAddress;
+echo"<br>";
+echo $userCity;
+echo"<br>";
+echo $userStreet;
+echo"<br>"; 
+echo $userZip;
 ?>
 
 </body>

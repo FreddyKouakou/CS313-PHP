@@ -4,13 +4,29 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Address</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="confirm.php" method="POST">
-        <label for="">Address:</label>
+        <label class="one" for="useraddress">State:</label>
         <input type="text" name="useraddress">
+        <br>
+        <label class="one" for="userCity">City:</label>
+        <input type="text" name="usercity">
+        <br>
+        <label class="one" for="userStreet">Street:</label>
+        <input type="text" name="userstreet">
+        <br>
+        <label class="one" for="userZip">Zip Code:</label>
+        <input type="text" name="userzip">
         <br>    <br>
          <input type="submit" value="Submit">
     </form>
+    <a href="shopping.php">Return to Cart</a>
+
+        <!--Footer-->
+<footer>
+    &copy; 2019 &bull; Freddy Kouakou &bull; kou17001@byui.edu
+</footer>
 </body>
 </html>
