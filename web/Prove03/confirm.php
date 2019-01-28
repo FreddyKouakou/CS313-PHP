@@ -26,16 +26,15 @@ $userZip = htmlspecialchars($_POST["userzip"]);
         </tr>
         <?php
         foreach ($_SESSION as $arrayIndex => $arrayValue) {
-            echo "<tr> <td> $arrayIndex</td>";
+            echo "<tr> <td> .$arrayIndex</td>";
             echo "<td>$priceArray[$arrayIndex]</td>";
-            echo "<td> $arrayValue</td></tr>";
+            echo "<td> .$arrayValue.</td></tr>";
         }
         
         ?>
     </table>
 <br>
 <br>
-<a href="browse.html">Return to Shopping</a></li>
 <?php 
 echo $userAddress;
 echo"<br>";
@@ -45,6 +44,10 @@ echo $userStreet;
 echo"<br>"; 
 echo $userZip;
 ?>
+<br>
+<br>
+<a href="browse.html">Return to Shopping</a></li>
+
 
 </body>
 </html>

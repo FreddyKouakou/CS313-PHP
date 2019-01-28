@@ -23,10 +23,13 @@ $priceArray = array('Orange'=>1, 'Mango'=>2, 'Banana'=>3, 'Tangerine'=>2, 'Pinea
             echo "<td>$arrayValue</td></tr>";
         }
         
+        
         ?>
     </table>
 <br>
 <br>
     <a href="browse.html">Return to Shopping</a>
+    <br>
+    <a href="checkout.html">Checkout</a>
 </body>
 </html>

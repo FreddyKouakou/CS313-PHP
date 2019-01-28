@@ -1,6 +1,6 @@
 <?php
 session_start();
-$fruits = $_POST['fruits'];
+$fruits = $_POST['Fruits'];
 foreach ($fruits as $addedFruits) {
 
 if (isset($_SESSION[$addedFruits])) {//Check the quantity of items in a session
