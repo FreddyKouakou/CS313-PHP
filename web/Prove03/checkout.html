@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Address</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chekout.css">
 </head>
 <body>
+    <fieldset>
+        <legend>Enter Address Info and Submit or Return to Cart</legend>
     <form action="confirm.php" method="POST">
         <label class="one" for="useraddress">State:</label>
         <input type="text" name="useraddress">
@@ -20,10 +22,10 @@
         <label class="one" for="userZip">Zip Code:</label>
         <input type="text" name="userzip">
         <br>    <br>
-         <input type="submit" value="Submit">
+         <input class="submit" type="submit" value="Submit">
     </form>
     <a href="shopping.php">Return to Cart</a>
-
+</fieldset>
         <!--Footer-->
 <footer>
     &copy; 2019 &bull; Freddy Kouakou &bull; kou17001@byui.edu

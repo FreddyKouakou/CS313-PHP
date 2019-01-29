@@ -30,6 +30,7 @@ $priceArray = array('Orange'=>1, 'Mango'=>2, 'Banana'=>3, 'Tangerine'=>2, 'Pinea
 <br>
     <a href="browse.html">Return to Shopping</a>
     <br>
+    <br>
     <a href="checkout.html">Checkout</a>
 </body>
 </html>
