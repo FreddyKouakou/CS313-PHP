@@ -41,7 +41,7 @@ catch (PDOException $ex)
         $row['verse'] . '</b>' . ' - '.
         $row['content'] . '</br>';
 
-        echo "<a href='receivingdata.php?id=$id'>Click To Display Content</a>"
+        echo "<a href='receivingdata.php?id=$id'>Click To Display Content</a>";
         
     }
     ?>
