@@ -39,7 +39,7 @@ catch (PDOException $ex)
         $row['book'] . ' ' .
         $row['chapter'] . ' : ' .
         $row['verse'] . '</b>' . ' - '.
-        $row['content'] . '</br>';
+        $row['content'] . '<br>';
 
         echo "<a href='receivingdata.php?id=$id'>Click To Display Content</a>";
         
