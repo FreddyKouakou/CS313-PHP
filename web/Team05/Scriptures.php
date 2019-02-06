@@ -33,12 +33,16 @@ catch (PDOException $ex)
 <body>
     <h1>Scriptures Resources</h1>
     <?php
-    foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures') as $row) {
+    foreach ($db->query('SELECT id, book, chapter, verse, content FROM Scriptures') as $row) {
         echo '<b>' .
+       $id = $row['id'];
         $row['book'] . ' ' .
         $row['chapter'] . ' : ' .
         $row['verse'] . '</b>' . ' - '.
         $row['content'] . '</br>';
+
+        echo "<a href='receivingdata.php?id=$id'>Click To Display Content</a>"
+        
     }
     ?>
 </body>
