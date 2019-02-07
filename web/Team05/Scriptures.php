@@ -1,4 +1,5 @@
 <?php
+/*
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -20,6 +21,22 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
+*/
+
+
+
+    $server = 'localhost';
+    $username = 'root';
+    $password = '';
+    $database = 'freddydb';
+
+    try {
+        $db = new PDO("mysql:host=$server;dbname=$database", $username, $password);
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+    }
+
 ?>
 
 <!DOCTYPE html>

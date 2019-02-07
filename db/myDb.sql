@@ -1,11 +1,11 @@
 CREATE TABLE students(
-    student_ID INT PRIMARY KEY, 
+    student_ID SERIAL PRIMARY KEY, 
     first_name VARCHAR(40),
     last_name VARCHAR(40)
 );
 
 CREATE TABLE subjects(
-    subject_ID INT PRIMARY KEY,
+    subject_ID SERIAL PRIMARY KEY,
     subject_name VARCHAR  (20)
 );
 
