@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vicky Kouakou Mart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="eCom.css" />
+    <script src="format.js"></script>
+</head>
+<body>
+<!--Header-->
+<header>
+    <h1>Bienvenu au marche des fruits chez "VickyKouakouMart"</h1>
+</header>
+<!--Navigation-->
+<nav class="fix">
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<!--Content-->
+<main>
+
+<form action= "eCom.php" method="POST">
+<fieldset>
+<legend>Customer Information</legend>
+<label class="one"> First Name* <input type="text" name="fname" required></label>
+<label class="one"> Last Name* <input type="text" name="lname" required></label>
+<label class="one"> Address* <input type="text" name="addressCusto" placeholder="City, State, Street" required></label>
+<label class="one"> Phone* <input type="tel" name="phone" placeholder="(233)5442100322"></label>
+</fieldset>
+<fieldset>
+    <legend>Shopping Cart</legend>
+    <div>Customer Selection Table</div>
+    <table border = "2">
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+
+    <tr>
+        <td>Orange</td>
+        <td>$ 0.10</td>
+        <td>
+            <input id="orangeId" onblur="calcItemPrice()" type="text" name="orange" size="10"/> 
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mango</td>
+        <td>$ 0.15</td>
+        <td>
+            <input id="mangoId" onblur="calcItemPrice()" type="text" name="mango" size="10" />
+        </td>
+    </tr>
+
+        <tr>
+            <td>Banana</td>
+            <td>$ 0.20</td>
+            <td>
+                <input id="bananaId" onblur="calcItemPrice()" type="text" name="banane" size="10" />
+            </td>
+        </tr>
+        <tr>
+            <td>Tangerine</td>
+            <td> $0.30 </td>
+            <td><input id="tangerineId"onblur="calcItemPrice()" type="text" name="tangerine" size="10" /> </td>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td> $0.50 </td>
+            <td>
+                <input id="appleId" onblur="calcItemPrice()" type="text" name="apple" size="10" /> </td>
+        </tr>
+
+        </table>
+        <div id='bill'>
+            <p>Shipping Price = 5% of Total Price</p>
+            <p>Taxes = 1% 0f Total Price</p>
+            <p>TOTAL: $
+                <span id="total"></span>
+            </p>
+        </div>
+</fieldset>
+
+<fieldset>
+    <legend>Payment Method</legend>
+   <p> Expiration Month: </p> <input type="text" name="month">
+   <p> Expiration Year: </p> <input type="text" name="year">
+   <p> Credit Card Number: </p> <input type="text" name="number">
+   <p> Email: </p> <input type="text" name="email">
+    <label class="two"> <input type="radio" name="payment" value="Visa" checked="checked" >Visa </label>
+    <label class="two"> <input type="radio" name="payment" value="Master Card" checked="checked" >Master Card </label>
+    <label class="two"> <input type="radio" name="payment" value="American Express" checked="checked" >American Express </label>
+    <label class="two"> <input type="radio" name="payment" value="Check" checked="checked" > Check</label>
+</fieldset>
+
+<input class="submitBtn" type="submit" value="Submit Order"/>
+<input class="resetBtn" type="reset" value="Clear Order Form"/>
+</form>
+</main>
+
+
+<!--Footer-->
+<footer>
+    &copy; 2018 &bull; Freddy Kouakou &bull; kou17001@byui.edu
+</footer>
+
+</body>
+</html>

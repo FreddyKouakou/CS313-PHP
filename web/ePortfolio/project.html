@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Personal Home Page</title>
+    <title>Freddy Kouakou ePortfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style/medium.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style/large.css" />
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="scipt/main.js"></script>
 </head>
 
@@ -16,29 +17,70 @@
     <!--Header-->
     <header>
         <h1>
-            Welcome to Freddy Kouakou's Personal Home Page
+        Welcome to Freddy Kouakou's ePortfolio
         </h1>
     </header>
 
     <!--Navigation bar-->
     <nav class="clearfix">
-        <ul>
+        <ul class="dropdownMenu">
             <li><a href="homepage.html">Home</a></li>
-            <li><a href="/team.html">Team Activity</a></li>
-            <li class="active"><a href="#">Project</a>
+            <li><a href="/about.html">About</a>
                 <ul>
-                    <li>Jam</li>
-                    <li>Pie</li>
-                    <li>Cider</li>
+                    <li>About me <a href="me.html" target="_blank"></a></li>
+                    <li>Retirement Bio <a href="bio.html" target="_blank"></a></li>
                 </ul>
             </li>
-            <li><a href="assignment.html">Prove Assignments</a></li>
-            <li><a href="group.html">Group Work</a></li>
+
+            <li class="active"><a href="project.html">Project</a>
+                <ul>
+                    <li> <a href="ponder/eCom.html" target="_blank" rel="noopener noreferrer">eCommerce Form</a> </li>
+                    <li><a href="TeamActivity/team6.html" target="_blank" rel="noopener noreferrer">Form Team Activity</a></li>
+                    <li>3</li>
+                </ul>
+            </li>
+            <li><a href="courses.html">BYU Courses</a>
+                <ul>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/EJkl2x2s-?bc=true&bcCurrent=Introduction%20to%20Software%20Development&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Intro to Programming</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/Ekg1l3ehjW?bc=true&bcCurrent=Object-Oriented%20Software%20Development&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Obj O. Programming</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/Ek-kx3lno-?bc=true&bcCurrent=Web%20Engineering%20I&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Web Engineering I</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/Nkexhxhjb?bc=true&bcCurrent=Data%20Structures&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Data Structures</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/VyzWxhghoW?bc=true&bcCurrent=Technical%20Communication&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Tech. Communication</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </li>
         </ul>
     </nav>
+    <!--Content-->
+    <main class="clearfix">
 
-    <body>
-        <h1>Coming Soon...</h1>
-    </body>
+        <form action="https://quiet-savannah-12901.herokuapp.com/HomePage/home.php" method="POST">
+
+            <h2> Thanks for visiting my School Project page</h2>
+            <p><i>Kindly click on any of the link to visit my school works</i></p>
+            <ul>
+                <li> <a href="ponder/eCom.html" target="_blank" rel="noopener noreferrer">eCommerce Form</a> </li>
+
+                <iframe src="https://www.youtube.com/watch?v=aRVQ2XlBQjA&t=178s" frameborder="0">Mobile Application <br> Android Project</iframe>
+            </ul>
+
+            <a href="resume/KOUAKOU KOUASSI FREDDY.pdf" target="_blank"><h5>My Resume</h5></a>
+            <input type="submit" value="Submit">
+        </form>
+        <img src="img/Freddy Kouakou R.jpg" alt="Freddy" class="center">
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        &copy; 2019 &bull; Freddy Kouakou &bull; kou17001@byui.edu
+    </footer>
+</body>
 
 </html>
