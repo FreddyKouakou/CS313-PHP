@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style/medium.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style/large.css" />
+    <link rel="stylesheet" href="Ponder/eCom.css">
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="scipt/main.js"></script>
 </head>
@@ -24,7 +25,7 @@
     <!--Navigation bar-->
     <nav class="clearfix">
         <ul class="dropdownMenu">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="/about.html">About</a>
                 <ul>
                     <li>About me <a href="me.html" target="_blank"></a></li>
@@ -40,14 +41,19 @@
             </li>
             <li><a href="courses.html">BYU Courses</a>
                 <ul>
-                    <li><a href="http://www.byui.edu/catalog/#/courses/EJkl2x2s-?bc=true&bcCurrent=Introduction%20to%20Software%20Development&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Intro to Programming</a></li>
-                    <li><a href="http://www.byui.edu/catalog/#/courses/Ekg1l3ehjW?bc=true&bcCurrent=Object-Oriented%20Software%20Development&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Obj O. Programming</a></li>
-                    <li><a href="http://www.byui.edu/catalog/#/courses/Ek-kx3lno-?bc=true&bcCurrent=Web%20Engineering%20I&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Web Engineering I</a></li>
-                    <li><a href="http://www.byui.edu/catalog/#/courses/Nkexhxhjb?bc=true&bcCurrent=Data%20Structures&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Data Structures</a></li>
-                    <li><a href="http://www.byui.edu/catalog/#/courses/VyzWxhghoW?bc=true&bcCurrent=Technical%20Communication&bcGroup=Computer%20Science&bcItemType=Courses" target="_blank" rel="noopener noreferrer">Tech. Communication</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/EJkl2x2s-?bc=true&bcCurrent=Introduction%20to%20Software%20Development&bcGroup=Computer%20Science&bcItemType=Courses"
+                            target="_blank" rel="noopener noreferrer">Intro to Programming</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/Ekg1l3ehjW?bc=true&bcCurrent=Object-Oriented%20Software%20Development&bcGroup=Computer%20Science&bcItemType=Courses"
+                            target="_blank" rel="noopener noreferrer">Obj O. Programming</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/Ek-kx3lno-?bc=true&bcCurrent=Web%20Engineering%20I&bcGroup=Computer%20Science&bcItemType=Courses"
+                            target="_blank" rel="noopener noreferrer">Web Engineering I</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/Nkexhxhjb?bc=true&bcCurrent=Data%20Structures&bcGroup=Computer%20Science&bcItemType=Courses"
+                            target="_blank" rel="noopener noreferrer">Data Structures</a></li>
+                    <li><a href="http://www.byui.edu/catalog/#/courses/VyzWxhghoW?bc=true&bcCurrent=Technical%20Communication&bcGroup=Computer%20Science&bcItemType=Courses"
+                            target="_blank" rel="noopener noreferrer">Tech. Communication</a></li>
                 </ul>
             </li>
-            <li><a href="contact.html">Contacts</a>
+            <li class="active"><a href="contact.html">Contacts</a>
                 <ul>
                     <li>Gmail</li>
                     <li><a href="https://www.linkedin.com/in/freddykouakou/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -61,10 +67,21 @@
 
         <h1>Connect with me on</h1>
         <ul>
-                <li>kouakoukfreddy@gmail.com</li>
-                <li><a href="https://www.linkedin.com/in/freddykouakou/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://twitter.com/FreddyKouakou3" target="_blank" rel="noopener noreferrer">Twiter</a></li>
-            </ul>
+            <li>kouakoukfreddy@gmail.com</li>
+            <li><a href="https://www.linkedin.com/in/freddykouakou/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/FreddyKouakou3" target="_blank" rel="noopener noreferrer">Twiter</a></li>
+        </ul>
+        <form action="eCom.php" method="POST">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label class="one"> First Name* <input type="text" name="fname" required></label>
+                <label class="one"> Last Name* <input type="text" name="lname" required></label>
+                <label class="one"> Address* <input type="text" name="addressCusto" placeholder="City, State, Street"
+                        required></label>
+                <label class="one"> Phone* <input type="tel" name="phone" placeholder="(233)5442100322"></label>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Submit Order" />
+            <input class="resetBtn" type="reset" value="Clear Order Form" />
     </body>
 
 </html>
