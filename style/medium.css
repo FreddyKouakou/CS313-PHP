@@ -1,0 +1,36 @@
+@media only screen and (min-width: 560px) {
+   /*-------------- HEADER NAV --------------*/
+    nav li {
+        float: left; 
+        width: 100px;
+        font-size: 14px;
+	    margin: 1px;  
+        height: 48px;
+        text-align: center;
+        background:rgb(240, 240, 240);        
+     
+    }
+   
+   li > ul {
+        position:relative;
+        width:190px;
+        clear:both;
+        /* Hide the Submenus */
+        display:none;
+    }
+    li > ul > li {
+        text-align: center;
+    }
+    
+   footer{
+       text-align: center;
+       background:rgb(240, 240, 240);
+   }
+   .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    border-radius: 50%;
+  }
+}
