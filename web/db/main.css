@@ -22,4 +22,7 @@ form input.submit{
 table, th, tr, td{
     width: 100px;
     border: #000;
+    padding: 3px;
+    margin: 5px;
+    border: #445ba9;
 }

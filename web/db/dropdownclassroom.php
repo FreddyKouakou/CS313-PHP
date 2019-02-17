@@ -48,7 +48,7 @@ catch (PDOException $ex)
 <!-- Teachers drop -->
 <form action="marks.php" method="POST"> 
 <fieldset>
-<legend>Please Selecta a Class </legend>
+<legend>Please Select a Class </legend>
 <select name="classroom" id="#">
 <!-- We are sending the teachers id and displaying the names of the teachers in the dropdowmn -->
 <?php foreach ($db->query("SELECT classroom_id, classroom_name FROM classrooms") as $row) { 
