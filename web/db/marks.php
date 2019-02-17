@@ -77,7 +77,7 @@ echo "</tr>";
 
  <input type="text" name="exercise_name">
  <br><br>
- <input type="submit" value="Submit">
+ <input type="submit" value="Insert">
  </fieldset>
  </form>
 </body>
