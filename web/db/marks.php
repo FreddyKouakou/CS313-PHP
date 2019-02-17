@@ -46,7 +46,8 @@ catch (PDOException $ex)
 </head>
 <body>
 <form action="insert.php" method="POST">
-
+<fieldset>
+<legend>Enter Marks and Exercise Name</legend>
 <?php
 /* This loop get the students exercise and score from the database */
 
@@ -77,6 +78,7 @@ echo "</tr>";
  <input type="text" name="exercise_name">
  <br><br>
  <input type="submit" value="Submit">
+ </fieldset>
  </form>
 </body>
 </html>
