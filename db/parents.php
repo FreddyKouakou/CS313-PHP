@@ -1,39 +1,6 @@
- <?php
-    // $server = 'localhost';
-    // $username = 'root';
-    // $password = '';
-    // $database = 'freddydb'; // replace with the name of the database you created on xampp MySQL
-
-    // try {
-    //     $db = new PDO("mysql:host=$server;dbname=$database", $username, $password);
-    //     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // } catch(PDOException $e) {
-    //     echo "Connection failed: " . $e->getMessage();
-    // }
-
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
-
-  $dbOpts = parse_url($dbUrl);
-
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
-
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
-
-?> 
+<?php
+include "connectdatabase.php";
+?>
 
 <!DOCTYPE html>
 <html>
@@ -48,13 +15,15 @@ catch (PDOException $ex)
 <body>
     <fieldset>
     <legend>Parents Info</legend>
+    <h3>Thanks for visiting KKF International School.</h3>
+    <p>Kindly write your username and request for you child school performance table</p>
     <form action="students.php" method="POST">
-   User Name: <br> <input type="text" name="user_name">
+   <label for="username">User Name: </label><input type="text" name="user_name">
    <!-- <br>
    Pass Word: <br> <input type="password" name="user_passer">
 -->
 <br>
-   <input type="submit" value="Log In"> 
+   <input type="submit" value="Send Request"> 
     </form>
     </fieldset>
     

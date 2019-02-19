@@ -1,39 +1,7 @@
 <?php
-    // $server = 'localhost';
-    // $username = 'root';
-    // $password = '';
-    // $database = 'freddydb'; // replace with the name of the database you created on xampp MySQL
-
-    // try {
-    //     $db = new PDO("mysql:host=$server;dbname=$database", $username, $password);
-    //     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // } catch(PDOException $e) {
-    //     echo "Connection failed: " . $e->getMessage();
-    // }
-
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
-
-  $dbOpts = parse_url($dbUrl);
-
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
-
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
-
+include "connectdatabase.php";
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,8 +14,7 @@ catch (PDOException $ex)
 </head>
 <body>
 <form action="insert.php" method="POST">
-<fieldset>
-<legend>Enter Marks and Exercise Name</legend>
+
 <?php
 /* This loop get the students exercise and score from the database */
 
@@ -77,8 +44,7 @@ echo "</tr>";
 
  <input type="text" name="exercise_name">
  <br><br>
- <input type="submit" value="Insert">
- </fieldset>
+ <input type="submit" value="Submit">
  </form>
 </body>
 </html>
