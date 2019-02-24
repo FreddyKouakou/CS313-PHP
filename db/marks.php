@@ -23,9 +23,18 @@ echo "<table>
     <th>Names</th> 
     <th>Marks</th>
 </tr>";
- 
-$classroomId = $_POST["classroom"];
-foreach ($db->query("SELECT student_id, first_name, last_name FROM students WHERE classroom_id = $classroomId") as $row)
+//  session_start();
+//  if (isset($_SESSION["teacher"])) {
+//      $userName = $_SESSION["teacher"];
+//  }
+//  else{
+$userName = $_POST["users_name"];
+//  }
+foreach ($db->query("SELECT classrooms.classroom_id, classrooms.classroom_name FROM classrooms JOIN teachers ON classrooms.teacher_id = teachers.teacher_id WHERE teachers.users_name = '$userName'") as $row) {
+    $getClassroom_id = $row["classroom_id"];
+    $getClassroom_name = $row["classroom_name"];
+}
+foreach ($db->query("SELECT student_id, first_name, last_name FROM students WHERE classroom_id = $getClassroom_id") as $row)
  {
 
     $studentName = $row['first_name'].$row['last_name'];
@@ -39,7 +48,7 @@ echo "</tr>";
 
  }
  echo "</table>";
- echo "<input type='hidden' value=$classroomId name='classroomId'>";//send the data from here to the next page
+ echo "<input type='hidden' value=$getClassroom_id name='classroomId'>";//send the data from here to the next page
  ?> 
 
  <input type="text" name="exercise_name">

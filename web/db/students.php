@@ -52,6 +52,7 @@ echo "<td>$exercise</td>
 echo "</tr>";
  }
  echo "</table>";
+ 
  ?>    
 </body>
 </html>

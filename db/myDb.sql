@@ -14,7 +14,10 @@ CREATE TABLE schools(
 );
 CREATE TABLE teachers(
 teacher_ID SERIAL PRIMARY KEY,
-teacher_name VARCHAR(50)
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+users_name VARCHAR(40),
+phone VARCHAR(20)
 
 );
 
@@ -27,6 +30,7 @@ CREATE TABLE terms(
 CREATE TABLE classes(
     classe_ID SERIAL PRIMARY KEY,
     classe_name VARCHAR(40),
+    
     department_ID INT REFERENCES departments(department_ID)
 );
 
@@ -41,7 +45,8 @@ CREATE TABLE classrooms(
     term_ID INT REFERENCES terms(term_ID),
     subject_ID INT REFERENCES subjects(subject_ID),
     school_ID INT REFERENCES schools(school_ID),
-    classe_ID INT REFERENCES classes(classe_ID)
+    classe_ID INT REFERENCES classes(classe_ID),
+    teacher_ID INT REFERENCES teachers(teacher_ID)
 
 );
 

@@ -16,5 +16,5 @@ foreach ($db->query("SELECT student_id FROM students WHERE classroom_id = $class
     $db ->query("INSERT INTO marks(student_id, exercise_name, score) VALUES($studentIdNumber, '$getExercise', $getMarks)");
 
 }
-header("location:dropdownclassroom.php");
+header("location:teachersform.php");
 ?>
