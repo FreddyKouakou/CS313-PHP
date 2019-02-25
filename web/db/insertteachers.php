@@ -11,7 +11,7 @@ $getClassroom_ID = $_POST['classroom'];
 echo $getClassroom_ID;
 
 $db->query("INSERT INTO teachers(first_name, last_name, users_name, phone) VALUES('$getFirstName','$getLastName', '$getUserName', '$getPhoneNumeber')");
-$teachers_id = $db->lastInsertId();
+$teachers_id = $db->lastInsertId("teacher_id");
 $db->query("UPDATE classrooms SET teacher_id = $teachers_id WHERE classroom_id = $getClassroom_ID");
 
 header("location:teacherslogin.php");

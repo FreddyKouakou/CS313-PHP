@@ -23,13 +23,13 @@ echo "<table>
     <th>Names</th> 
     <th>Marks</th>
 </tr>";
-//  session_start();
-//  if (isset($_SESSION["teacher"])) {
-//      $userName = $_SESSION["teacher"];
-//  }
-//  else{
+ session_start();
+ if (isset($_SESSION["teacher"])) {
+     $userName = $_SESSION["teacher"];
+ }
+ else{
 $userName = $_POST["users_name"];
-//  }
+ }
 foreach ($db->query("SELECT classrooms.classroom_id, classrooms.classroom_name FROM classrooms JOIN teachers ON classrooms.teacher_id = teachers.teacher_id WHERE teachers.users_name = '$userName'") as $row) {
     $getClassroom_id = $row["classroom_id"];
     $getClassroom_name = $row["classroom_name"];
