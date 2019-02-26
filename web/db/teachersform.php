@@ -16,12 +16,13 @@ include "connectdatabase.php";
 <form action="insertteachers.php" method="POST">
 <fieldset>
 <legend>Teacher's Information</legend>
-First Name:*<input type="text" name="first_name">
-Last Name:*<input type="text" name="last_name">
-Username:*<input type="text" name="users_name">
+<label class="username" for="firstname">First Name* </label><input required type="text" name="first_name">
+<label class="username">Last Name*</label><input required type="text" name="last_name">
+<label class="username">Username*</label><input required type="text" name="users_name">
 <!-- Password* : <input type="password" name="password"> -->
-Telephone *: <input type="telephone" name="telephone">
+<label for="telephone"> Telephone *</label> <input required type="telephone" name="telephone">
 </fieldset>
+<br>
 <fieldset>
 <!-- This form displays the list of Teacher's in a class for the parents to select their child -->
 <legend>Select a Class</legend>
@@ -37,8 +38,14 @@ echo"<option value= $classroom_id>$classroom_name </option>";
 ?>
 </select>
 <br><br>
-<input type="submit" value="Submit">
+<input id="submit" type="submit" value="Submit">
 </fieldset>
 </form>
+<br>
+<!--Footer-->
+<footer>
+    &copy; 2019 &bull; Freddy Kouakou &bull; kou17001@byui.edu
+</footer>
+
 </body>
 </html>

@@ -14,18 +14,21 @@ include "connectdatabase.php";
 </head>
 <body>
     <fieldset>
-    <legend>Username</legend>
-    <h3>Thanks for your hardwork at KKF International School.</h3>
-    <p>Kindly write your username and provide students marks</p>
+    <legend>Enter Your Username</legend>
     <form action="marks.php" method="POST">
-   <label for="username">User Name: </label><input type="text" name="users_name">
+   <label class="username" for="username">User Name* </label><input required type="text" name="users_name">
    <!-- <br>
    Pass Word: <br> <input type="password" name="user_passer">
 -->
 <br>
-   <input type="submit" value="Send Request"> 
+   <input id="submit" type="submit" value="Go to Record"> 
     </form>
     </fieldset>
-    
+<br>
+<!--Footer-->
+<footer>
+    &copy; 2019 &bull; Freddy Kouakou &bull; kou17001@byui.edu
+</footer>
+
 </body>
 </html>
