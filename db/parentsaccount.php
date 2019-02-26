@@ -16,11 +16,11 @@ include "connectdatabase.php";
 <form action="insertparents.php" method="POST">
 <fieldset>
 <legend>Please Create an Account</legend>
-First Name:*<input type="text" name="first_name">
-Last Name:*<input type="text" name="last_name">
-Username:*<input type="text" name="users_name">
+<label for="first_name"> First Name*</label><input required type="text" name="first_name">
+<label>Last Name*</label><input required type="text" name="last_name">
+<label>Username*</label><input type="text" name="users_name">
 <!-- Password* : <input type="password" name="password"> -->
-Telephone *: <input type="telephone" name="telephone">
+<label>Telephone*</label><input required type="telephone" name="telephone">
 </fieldset>
 <fieldset>
 <!-- This form displays the list of students in a class for the parents to select their child -->
@@ -38,7 +38,7 @@ echo $student_id;
 ?>
 </select>
 <br><br>
-<input type="submit" value="Submit">
+<input id="submit" type="submit" value="Submit">
 </fieldset>
 </form>
 </body>

@@ -34,7 +34,7 @@ include "connectdatabase.php";
 /* This loop get the students exercise and score from the database */
 echo "<table> 
 <tr>
-    <th>Exercises</th> 
+    <th>Assignments</th> 
     <th>Score</th>
 </tr>";
  
@@ -53,6 +53,12 @@ echo "</tr>";
  }
  echo "</table>";
  
- ?>    
+ ?>
+ <br>
+ <!--Footer-->
+<footer>
+    &copy; 2019 &bull; Freddy Kouakou &bull; kou17001@byui.edu
+</footer>
+  
 </body>
 </html>

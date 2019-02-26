@@ -50,10 +50,17 @@ echo "</tr>";
  echo "</table>";
  echo "<input type='hidden' value=$getClassroom_id name='classroomId'>";//send the data from here to the next page
  ?> 
-
+<br>
+<label for="exercise_name">Assignment Name</label>
  <input type="text" name="exercise_name">
  <br><br>
- <input type="submit" value="Submit">
+ <input id="submit" type="submit" value="Submit">
  </form>
+ <br>
+ <!--Footer-->
+<footer>
+    &copy; 2019 &bull; Freddy Kouakou &bull; kou17001@byui.edu
+</footer>
+
 </body>
 </html>
